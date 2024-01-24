@@ -134,7 +134,7 @@
 } */
 
 /* button-4 */
-.btn {
+/* .btn {
     border: transparent;
     color: tomato;
     padding: 10px 20px;
@@ -169,4 +169,41 @@
 .btn:hover:after {
     transform: scaleY(1);
     background-color: tomato;
+} */
+
+
+.box-1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    animation-name: moving;
+    animation-duration: 1000ms;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes moving {
+    0% {
+        transform: translate(0);
+        background-color: blue;
+    }
+
+    25% {
+        transform: translate(100px);
+    }
+
+    50% {
+        transform: translate(100px, 100px);
+    }
+
+    75% {
+        transform: translate(-100px, 100px);
+    }
+
+    100% {
+        transform: translate(-100px, -100px);
+    }
 }
