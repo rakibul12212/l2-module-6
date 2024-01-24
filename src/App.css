@@ -210,7 +210,8 @@
 } */
 
 /* loading animation */
-/* * {
+/* 
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -273,7 +274,7 @@
 } */
 
 /* clip-path */
-.main {
+/* .main {
 
     width: 100%;
     height: 100vh;
@@ -293,4 +294,38 @@
 
 .card:hover {
     clip-path: circle(70.7% at 50% 50%);
+} */
+
+/* staggered */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-color: #000038;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.alphabet {
+    color: white;
+    transition: all ease-in-out;
+    transition: 100ms;
+}
+
+.container:hover .alphabet {
+    color: #dc02c3;
 }
