@@ -1,19 +1,22 @@
 .main {
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+
 }
+
 .box-1 {
-  background-color: red;
-  height: 150px;
-  width: 100%;
-  transition-duration: 500ms;
-  transition-timing-function: ease;
-  position: absolute;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    margin: 10px;
 }
+
 .box-1:hover {
-  transform: translatey(150px);
+    transform: rotateX(30deg)
 }
